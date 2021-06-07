@@ -79,11 +79,21 @@ html {
     margin: 0.3rem;
     width: calc(40.2rem/7);
     height: 5rem;
-    display: center;
+    display: flex;
     justify-content: center;
-    /* text-shadow: 0.3rem .5rem rgba(0,0,0,0.2); */
+   transition: background-color .2s;
+}
+
+.days div:hover:not(.today){
+    background-color: #262626;
+    border: 0.2rem solid#777;
+    cursor: pointer;
 }
 
 .prev-date, .nex-date{
     opacity: 0.5;
+}
+
+.today {
+    background-color: green;
 }
